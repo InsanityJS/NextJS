@@ -1,6 +1,12 @@
-import Heading from "@/components/Heading";
+import {FC} from "react";
+import Heading from "./Heading";
+import {IContact} from "../types/types";
 
-const ContactInfo = ({contact}) => {
+type IProps = {
+    contact: IContact,
+}
+
+const ContactInfo: FC<IProps> = ({contact}) => {
     const {name, email, address} = contact || {};
     const {street, suite, city, zipcode} = address || {};
 

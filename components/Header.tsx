@@ -1,7 +1,8 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "./Navbar";
 import styles from "../styles/Header.module.scss";
+import {FC} from "react";
 
-const Header = () => (
+const Header: FC = () => (
     <header className={styles.header}>
         <Navbar/>
     </header>

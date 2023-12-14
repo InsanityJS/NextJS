@@ -1,10 +1,11 @@
 import Layout from "../components/Layout";
 // import Image from "next/image";
 // import imageBack from "../public/image-back.jpg"
+import {AppProps} from "next/app";
 import '../styles/globals.scss'
 import Head from "next/head";
 
-const MyApp = ({Component, pageProps}) => (
+const MyApp = ({Component, pageProps}: AppProps) => (
     <Layout>
         <Head>
             <link

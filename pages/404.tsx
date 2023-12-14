@@ -1,10 +1,11 @@
 import * as React from 'react';
 import {useEffect} from "react";
 import {useRouter} from "next/router";
-import Heading from "@/components/Heading";
+import Heading from "../components/Heading";
 import Head from "next/head";
 
-const Error = () => {
+
+const Error: React.FC = () => {
     const router = useRouter();
 
     useEffect(() => {
